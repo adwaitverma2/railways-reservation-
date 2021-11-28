@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+    <h1>Booking</h1>
+    <form class="" action="/compose" method="post">
+        <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" name="name" size="15">
+            <label>From Station</label>
+            <input class="form-control" type="text" name="fst">
+            <label>To Station</label>
+            <input class="form-control" type="text" name="tst">
+            <label>Date</label>
+            <input class="form-control" type="text" name="date">
+            <label>Mobile No</label>
+            <input class="form-control" type="text" name="mno">
+            <label>Email</label>
+            <input class="form-control" type="text" name="email">
+            <label>Train name</label>
+            <input class="form-control" type="text" name="tname">
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Book</button>
+    </form>
+
+    <%- include("partials/footer"); -%>

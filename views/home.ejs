@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+    <h2>Home</h2>
+    <h1>Welcome to Indian Railways reservation system</h1>
+
+    <p>
+        <%= startingContent %>
+    </p>
+    <%  posts.forEach(function(post){ %>
+
+        <h2>
+            <%=post.name%>
+        </h2>
+        <h1>
+            <%=post.name%>
+        </h1>
+
+        <p>
+            <%=post.fst.substring(0, 100) + " ..."%>
+                <a href="/posts/<%=post.name%>">Read More</a>
+        </p>
+
+
+        <% }) %>
+
+
+            <%- include("partials/footer"); -%>
